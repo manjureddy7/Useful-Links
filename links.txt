@@ -1,3 +1,19 @@
 One of the best resource i have found on HOW to do unit testing using Enzyme & Jest in React
 
 Link:: https://blog.bitsrc.io/how-to-test-react-components-with-jest-and-enzyme-in-depth-145fcd06b90
+
+
+
+
+const obj = {
+  wow: "Manoj",
+  sayName(cb) {
+  cb("Manoj Reddy", 25, this.wow)
+  }
+}
+
+const Test = (name, age, company) => {
+  console.log("Name, Age  & Company are ==> ", name, age, company)
+};
+
+console.log(obj.sayName(Test));
